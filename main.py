@@ -2,13 +2,13 @@ from typing import Union
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from supabase import create_client, Client
-from app.router import router
+from app.tests.router import router as tests_router
 
 load_dotenv()
 
 app = FastAPI()
 
-app.include_router(router)
+app.include_router(tests_router)
 
 @app.get("/")
 def read_root():

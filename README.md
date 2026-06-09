@@ -1,6 +1,5 @@
 # Template
 
-Add the following files into .gitignore
-* `.env`
-* `.venv/`
-* `__pycache__/`
+### Contents of `.env`
+* `SUPABASE_URL=https://xxx.supabase.co`
+* `SUPABASE_KEY=sb_secret_xxx_xxx`
